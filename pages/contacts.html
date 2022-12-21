@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты</title>
+</head>
+
+<body>
+  <header>
+    <h1>Вокруг света</h1>
+
+    <nav>
+      <div>
+        <a href="../index.html">Главная</a>
+        <a href="articles.html">Статьи</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="page-nav.html">Навигация</a>
+        <a href="registration.html">Регестрация</a>
+      </div>
+    </nav>
+
+    <hr>
+  </header>
+
+  <main>
+    <section>
+      <h2>Как нас найти:</h2>
+
+      <p><b>Адрес:</b> Страда Шаров 1, Тирасполь, Молдова.</p>
+
+      <p><b>Время работы:</b> Пн.-Пт.: с 09:00 до 17:00.</p>
+
+      <b>Наше место нахождение:</b>
+
+      <div>
+        <img src="../images/googlemap.jpg" alt="Наше местоположение в городе">
+      </div>
+    </section>
+
+    <form action="https://tests.fomenko.top/echo/index.php" method="get" autocomplete="on">
+      <fieldset>
+        <legend>
+          <h2>Обратная связь</h2>
+        </legend>
+
+        <div>
+          <label>Ваше имя
+            <input type="text" name="name" placeholder="Имя" required>
+          </label>
+        </div>
+
+        <div>
+          <label>Адрес электронной почты
+            <input type="email" name="email" placeholder="Email" required>
+          </label>
+        </div>
+
+        <div>
+          <label>Контактный телефон:
+            <input type="tel" name="tel" placeholder="+380998237543" required>
+          </label>
+        </div>
+
+        <div>
+          <textarea id="question" name="question" cols="30" rows="10" placeholder="Ваш вопрос" required></textarea>
+        </div>
+
+        <div>
+          <button type="submit">Отправить</button>
+        </div>
+      </fieldset>
+    </form>
+
+    <hr>
+  </main>
+
+  <footer>
+    <div>
+      &copy;
+      <abbr title="Web Content">WC</abbr>
+    </div>
+  </footer>
+</body>
+
+</html>

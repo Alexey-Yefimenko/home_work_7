@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регестрация</title>
+</head>
+
+<body>
+  <header>
+    <h1>Вокруг света</h1>
+
+    <nav>
+      <div>
+        <a href="../index.html">Главная</a>
+        <a href="articles.html">Статьи</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="page-nav.html">Навигация</a>
+        <a href="registration.html">Регестрация</a>
+      </div>
+    </nav>
+
+    <hr>
+  </header>
+
+  <main>
+    <form action="https://tests.fomenko.top/echo/index.php" method="get" autocomplete="on">
+      <fieldset>
+        <legend>
+          <h2>Регестрация</h2>
+        </legend>
+
+        <fieldset>
+          <legend>
+            <h3>Общая информация</h3>
+          </legend>
+
+          <div>
+            <label>Фамилия
+              <input type="text" name="sername" placeholder="Ефименко" required>
+            </label>
+          </div>
+
+          <div>
+            <label>Имя
+              <input type="text" name="name" placeholder="Алексей" required>
+            </label>
+          </div>
+
+          <div>
+            <label>Адрес электронной почты
+              <input type="email" name="email" placeholder="email" required>
+            </label>
+          </div>
+
+          <div>
+            <label>Введите пароль
+              <input type="password" name="password" placeholder="*******" required>
+            </label>
+          </div>
+
+          <div>
+            <label>Контактный телефон:
+              <input id="tel" type="tel" name="tel" placeholder="+380998237543">
+            </label>
+          </div>
+
+          <div>
+            <label>Ваш день рождения
+              <input type="date" min="1923-01-01" max="2014-01-01" name="birthday">
+            </label>
+          </div>
+
+          <div>
+            <label>Выберете свою фотографию
+              <input type="file" name="photo" accept="image/*">
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <h3>Дополнительная информация о себе</h3>
+          </legend>
+
+          <div>
+            <label>Количество стран которые вы посетили
+              <select name="language-knowledge">
+                <option disabled selected value="#">Выберете количество</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="more-then-three">4 и больше</option>
+              </select>
+            </label>
+          </div>
+
+          <div>
+            <p>Сколько языков вы знаете:</p>
+
+            <div>
+              <label>
+                <input type="radio" name="quantity-language-knowledge" value="не знаю">Ни одного
+              </label>
+            </div>
+
+            <div>
+              <label>
+                <input type="radio" name="quantity-language-knowledge" value="1">
+              </label>Один
+            </div>
+
+            <div>
+              <label>
+                <input type="radio" name="quantity-language-knowledge" value="2">
+              </label>Два
+            </div>
+
+            <div>
+              <label>
+                <input type="radio" name="quantity-language-knowledge" value="more-three">Больше чем два
+              </label>
+            </div>
+
+            <div>
+              <p>Какие языки вы знаете:</p>
+
+              <div>
+                <label>
+                  <input name="language-knowledge" value="eng" type="checkbox">
+                  Английский</label>
+              </div>
+
+              <div>
+                <label>
+                  <input name="language-knowledge" value="ukr" type="checkbox">
+                  Украинский
+                </label>
+              </div>
+
+              <div>
+                <label>
+                  <input name="language-knowledge" value="franch" type="checkbox">
+                  Французский
+                </label>
+              </div>
+            </div>
+
+            <div>
+              <label>
+                <textarea name="personal-information" cols="35" rows="10" placeholder="Пару слов о себе">
+              </textarea>Пару слов о себе
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Управление анкетой</legend>
+
+          <div>
+            <button type="submit">Зарегестрироваться</button>
+            <button type="reset">Очистить анкету</button>
+          </div>
+        </fieldset>
+      </fieldset>
+    </form>
+
+    <hr>
+  </main>
+
+  <footer>
+    <div>
+      &copy;
+      <abbr title="Web Content">WC</abbr>
+    </div>
+  </footer>
+</body>
+
+</html>
