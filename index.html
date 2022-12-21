@@ -5,37 +5,60 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <title>Главная</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="scss/style.scss">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="background">
+
+  <div class="overlay"></div>
+  <div class="lab"></div>
 
   <header>
-    <h1>Lorem ipsum dolor sit amet.</h1>
+    <div class="container">
+      <h1 class="main-text">Вокруг света</h1>
 
-    <div class="manu">
-
-      <h2 class="menu__header">Lorem.</h2>
-
-      <nav>
-        <ol>
-          <li class="menu__item">Lorem, ipsum.</li>
-          <li class="menu__item">Lorem, ipsum dolor.</li>
-          <li class="menu__item">Lorem, ipsum.</li>
-          <li class="menu__item">Lorem, ipsum.</li>
-          <li class="menu__item">Lorem, ipsum dolor.</li>
+      <nav class="nav">
+        <ol class="nav-top">
+          <il class="nav-top-item"><a class="nav-top-item-link" href="index.html">Главная</a></il>
+          <il class="nav-top-item"><a class="nav-top-item-link" href="pages/articles.html">Статьи</a></il>
+          <il class="nav-top-item"><a class="nav-top-item-link" href="pages/catalog.html">Каталог</a></il>
+          <il class="nav-top-item"><a class="nav-top-item-link" href="pages/contacts.html">Контакты</a></il>
+          <il class="nav-top-item"><a class="nav-top-item-link" href="pages/gallery.html">Галерея</a></il>
+          <il class="nav-top-item"><a class="nav-top-item-link" href="pages/page-nav.html">Навигация</a></il>
+          <il class="nav-top-item"><a class="nav-top-item-link" href="pages/registration.html">Регестрация</a></il>
         </ol>
       </nav>
     </div>
-
-    </h1>
-
   </header>
 
-  <main></main>
-  <footer></footer>
+  <main>
+    <div class="container">
 
+      <p class="content">Вы находитесь на крупнейшем, и самом популярном туристическом форуме Украины. Чувствуйте
+        себя как дома!
+        Уважайте других, как своих гостей. И самое главное, помните, что отмалчиваться в сторонке, слушая других, не
+        вежливо. На десять прочитанных сообщений вставляйте хотя бы одно своё.</p>
+
+      <img src="images/crossword.jpg" alt="Just image" title="Вокруг света">
+
+    </div>
+  </main>
+
+  <footer class="container">
+    <div class="nav-icon ">
+      <a href="" target="_blank"><i class="fa-brands fa-facebook" title="Facebook"></i></a>
+      <a href="" target="_blank"><i class="fa-brands fa-telegram" title="Telegram"></i></a>
+      <a href="" target="_blank"><i class="fa-brands fa-instagram" title="Instagram"></i></a>
+    </div>
+  </footer>
 </body>
 
 </html>
